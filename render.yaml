@@ -6,7 +6,7 @@ services:
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
-      - key: MB_DB_CONNECTION_URI
+      - key: postgres://metabase_hot8_user:xkXI9qAyT50PHgmYh24NbXIddXDJd4jW@dpg-cldredglkhpc73fatdb0-a/metabase_hot8
         fromDatabase:
           name: elephant
           property: connectionString
