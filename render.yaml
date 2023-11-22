@@ -6,11 +6,6 @@ services:
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
-      - key: ep-red-frog-74355594-pooler.us-east-1.postgres.vercel-storage.com
+      - key: postgres://default:apeMw2XNcFv1@ep-red-frog-74355594-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15
         fromDatabase:
-          name: elephant
-          property: connectionString
-databases:
-  - name: elephant
-    databaseName: metabasedb
-    ipAllowList: [] # only allow internal connections
+          name: verceldb
