@@ -1,4 +1,4 @@
-docker pull alex199177/metabase_netflix
+docker pull metabase/metabase:latest
 docker run -d -p 3000:3000 \
   -e "MB_DB_TYPE=postgres" \
   -e "MB_DB_DBNAME=metabase-postgres" \
