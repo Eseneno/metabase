@@ -6,7 +6,7 @@ services:
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
-      - key: postgres://metabase_hot8_user:xkXI9qAyT50PHgmYh24NbXIddXDJd4jW@dpg-cldredglkhpc73fatdb0-a/metabase_hot8
+      - key: ep-red-frog-74355594-pooler.us-east-1.postgres.vercel-storage.com
         fromDatabase:
           name: elephant
           property: connectionString
