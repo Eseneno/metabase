@@ -1,1 +1,1 @@
-docker run -d -p 3000:3000 --name metabase metabase/metabase
+docker pull alex199177/metabase_netflix
