@@ -2,8 +2,5 @@ services:
   - type: web
     name: metabase
     env: docker
-    repo: https://github.com/render-examples/metabase.git # optional
-    plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
-    autoDeploy: false
-    envVars:
-      POSTGRES_URL: "postgres://default:apeMw2XNcFv1@ep-red-frog-74355594.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+    hosts:
+    - datoseinversion.es
